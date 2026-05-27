@@ -1,0 +1,31 @@
+name: Pipeline Sobre Mim DevOps
+
+on:
+  push:
+    branches:
+      - dev
+
+  pull_request:
+    branches:
+      - test
+      - master
+
+jobs:
+  validar-projeto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v3
+
+      - name: Verificar arquivo HTML
+        run: test -f index.html
+
+      - name: Verificar arquivo CSS
+        run: test -f style.css
+
+      - name: Verificar arquivo JavaScript
+        run: test -f script.js
+
+      - name: Confirmar estrutura do projeto
+        run: echo "Projeto validado com sucesso."
