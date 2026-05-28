@@ -2,31 +2,41 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f1ea;
+    background: linear-gradient(to right, #dbeafe, #eff6ff);
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .livro {
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 450px;
+
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+
     overflow: hidden;
+
     position: relative;
 }
 
 .pagina {
     width: 100%;
     height: 100%;
-    padding: 40px;
+
+    padding: 50px;
+
     box-sizing: border-box;
+
     display: none;
-    animation: aparecer 0.4s ease;
+
+    animation: aparecer 0.5s ease;
 }
 
 .pagina.ativa {
@@ -34,44 +44,84 @@ body {
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 20px;
+    color: #1e3a8a;
+    margin-bottom: 25px;
 }
 
 h2 {
-    color: #555;
+    color: #2563eb;
+}
+
+h3 {
+    color: #2563eb;
 }
 
 p {
-    color: #666;
-    line-height: 1.6;
+    color: #444;
+    line-height: 1.7;
+    font-size: 18px;
 }
 
-.botoes {
-    margin-top: 20px;
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.descricao {
+    font-size: 20px;
+}
+
+.icone-livro {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.controle {
+    margin-top: 25px;
+
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 button {
     padding: 12px 25px;
+
     border: none;
+
     border-radius: 8px;
-    background-color: #5c7cfa;
+
+    background-color: #2563eb;
+
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #4263eb;
+    background-color: #1d4ed8;
+}
+
+#contador {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3a8a;
 }
 
 @keyframes aparecer {
+
     from {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(30px);
     }
 
     to {
