@@ -11,68 +11,143 @@
 
   <div class="livro">
 
+    <!-- CAPA -->
     <div class="pagina ativa">
       <h1>Livro do Grupo</h1>
 
-      <p>
+      <p class="descricao">
         Bem-vindo ao nosso livro virtual.
       </p>
 
       <p>
-        Passe as páginas para conhecer os integrantes.
+        Passe as páginas para conhecer os integrantes e o projeto.
       </p>
+
+      <div class="icone-livro">
+        📖
+      </div>
     </div>
 
+    <!-- ALANA -->
     <div class="pagina">
       <h1>Integrante 1</h1>
 
       <h2>Alana</h2>
 
-      <p>Curso: Análise e Desenvolvimento de Sistemas</p>
+      <p>
+        Curso: Análise e Desenvolvimento de Sistemas
+      </p>
 
-      <p>Interesses: Desenvolvimento web e design.</p>
+      <p>
+        Interesse em desenvolvimento web e design de interfaces.
+      </p>
     </div>
 
+    <!-- LEONARDO -->
     <div class="pagina">
       <h1>Integrante 2</h1>
 
       <h2>Leonardo</h2>
 
-      <p>Curso: Engenharia de Software</p>
+      <p>
+        Curso: Análise e Desenvolvimento de Sistemas
+      </p>
 
-      <p>Interesses: Tecnologia e programação.</p>
+      <p>
+        Interesse em programação e novas tecnologias.
+      </p>
     </div>
 
+    <!-- CLEITON -->
     <div class="pagina">
       <h1>Integrante 3</h1>
 
       <h2>Cleiton</h2>
 
-      <p>Curso: Engenharia de Software</p>
+      <p>
+        Curso: Análise e Desenvolvimento de Sistemas
+      </p>
 
-      <p>Interesses: Sistemas e banco de dados.</p>
+      <p>
+        Interesse em sistemas e banco de dados.
+      </p>
     </div>
 
+    <!-- GUSTAVO -->
     <div class="pagina">
       <h1>Integrante 4</h1>
 
       <h2>Gustavo</h2>
 
-      <p>Curso: Engenharia de Software</p>
+      <p>
+        Curso: Análise e Desenvolvimento de Sistemas
+      </p>
 
-      <p>Interesses: Front-end e desenvolvimento web.</p>
+      <p>
+        Interesse em front-end e desenvolvimento web.
+      </p>
+    </div>
+
+    <!-- TECNOLOGIAS -->
+    <div class="pagina">
+      <h1>Tecnologias Utilizadas</h1>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git e GitHub</li>
+        <li>GitHub Actions</li>
+        <li>Vercel</li>
+      </ul>
+    </div>
+
+    <!-- CONCEITOS -->
+    <div class="pagina">
+      <h1>Conceitos Aplicados</h1>
+
+      <ul>
+        <li>Versionamento com Git</li>
+        <li>Branches dev, test e master</li>
+        <li>Pipeline CI/CD</li>
+        <li>Logs INFO, WARN e ERROR</li>
+        <li>Monitoramento básico</li>
+      </ul>
+    </div>
+
+    <!-- FINAL -->
+    <div class="pagina">
+      <h1>Obrigado!</h1>
+
+      <p>
+        Obrigado por visualizar nosso projeto.
+      </p>
+
+      <p>
+        Esperamos que tenha gostado da experiência.
+      </p>
+
+      <div class="icone-livro">
+        🚀
+      </div>
     </div>
 
   </div>
 
-  <div class="botoes">
+  <div class="controle">
+
     <button onclick="paginaAnterior()">
       ← Anterior
     </button>
 
+    <span id="contador">
+      Página 1
+    </span>
+
     <button onclick="proximaPagina()">
       Próxima →
     </button>
+
   </div>
 
   <script src="script.js"></script>
